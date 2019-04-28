@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scal=1">
+    <script th:src="@{/jquery/jquery-1.9.1.min.js}" type="text/javascript"></script>
+    <script th:src="@{/bootstrap3.3.5/js/bootstrap.min.js}" type="text/javascript"></script>
+    <link th:href="@{/bootstrap3.3.5/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/bootstrap3.3.5/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>-->
+
+    <script th:src="@{/js/vue.js}"></script>
+
+    <title>第一个vue页面</title>
+</head>
+<body>
+
+<div id="root">
+    <h2>{{msg}}</h2>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+    new Vue({
+        el:"#root",
+        data:{
+            msg:"第一个vue页面"
+        }
+    })
+
+</script>
+
+
+</body>
+</html>
