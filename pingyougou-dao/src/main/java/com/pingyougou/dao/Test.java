@@ -7,5 +7,6 @@ public class Test {
 
     public void Hello(){
         System.out.println("hello world");
+        System.out.println("谈闻------------");
     }
 }
